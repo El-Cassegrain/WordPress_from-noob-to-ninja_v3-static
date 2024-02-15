@@ -1,0 +1,30 @@
+/* Mixins */
+@mixin btn {
+    padding: .7rem 1.35rem;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    color: $primary;
+    font-family: $main-font;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+@mixin btn-primary {
+    color: white;
+    background-color: $primary;
+    border: 1px solid $primary;
+}
+
+@mixin btn-outline-primary {
+    color: $primary;
+    border: 1px solid $primary;
+}
+
+@mixin btn-outline-secondary {
+    color: $secondary;
+    border: 1px solid $secondary;
+}

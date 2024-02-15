@@ -1,0 +1,45 @@
+/* Hero section */
+section#hero-section {
+    margin-top: $header-height;
+    padding-top: 1.25rem;
+}
+
+p.lead {
+    font-size: clamp(24px, 3vw, 40px);
+    padding-bottom: .45rem;
+    font-weight: 600;
+}
+
+p.subtitle {
+    line-height: 1.45rem;
+    color: $mid-gray;
+}
+
+.cta-section {
+    margin-top: $cta-margin-top;
+    margin-bottom: calc($cta-margin-top + 22px);
+    max-width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside#main-aside {
+    width: 100%;
+    ul {
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    section#hero-section {
+        display: grid;
+        grid-template-columns: 60% 1fr;
+        gap: 50px;
+        max-width: 100%;
+    }
+    aside#main-aside {
+        margin-top: calc($cta-margin-top * 2);
+        padding-left: 25px;
+        border-left: 1px solid $very-light-gray;
+    }
+}

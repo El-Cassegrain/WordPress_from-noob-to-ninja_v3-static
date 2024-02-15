@@ -1,0 +1,111 @@
+@import "variables";
+@import "mixins";
+
+/* Small reset */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 108%
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 116%
+    }
+}
+
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 124%
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 132%
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    html {
+        font-size: 140%
+    }
+}
+
+
+/* Global styles */
+body {
+    font-family: $main-font;
+    color: $secondary;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section {
+    display: block;
+}
+
+main {
+    margin-bottom: calc($footer-height + 1.25rem);
+}
+
+a, a.btn, button.btn {
+    cursor: pointer;
+}
+
+a:not(.btn){
+    color: $link-color;
+}
+
+a.link {
+    display: inline-flex;
+    padding: 12px 0;
+}
+
+a.link-out {
+    &::after {
+        content: "\F1C5";
+        font-family: "bootstrap-icons";
+        padding-left: 5px;
+        text-decoration: none;
+    }
+}
+
+h1 {
+    font-size: clamp(42px, 7vw, 96px);
+    padding-bottom: .35rem;
+}
+
+h2 {
+    font-size: 20px;
+    padding-bottom: .5rem;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.btn {
+    @include btn;
+}
+
+.btn-primary {
+    @include btn-primary;
+}
+
+.btn-outline-primary {
+    @include btn-outline-primary;
+}
+
+.btn-outline-secondary {
+    @include btn-outline-secondary;
+}
