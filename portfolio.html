@@ -39,8 +39,8 @@
             <!-- Main nav -->
             <nav id="main-nav">
                 <ul>
-                    <li><a href="index.html" class="nav-link active">Accueil</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
                     <li><a href="blog.html" class="nav-link">Blog</a></li>
                     <li><a href="a-propos.html" class="nav-link">À propos</a></li>
                 </ul>
@@ -62,40 +62,58 @@
                 <div class="container-left">
 
 
-                    <h1>Welcome</h1>
+                    <h1>Portfolio</h1>
 
                     <p class="lead">
-                        Grâce au moteur de WordPress et la possibilité de créer son propre thème de conception, nos
-                        maquettes prennent vie !
+                        En utilisant un Custom Post Type, nous pouvons étendre les fonctionnalités de WP.
                     </p>
 
                     <p class="subtitle">
-                        Passez de Newbies à de véritables Ninjas avec le plus fameux des CMS.
+                        Par exemple, nous pouvons installer un CPT "Galerie", et rendre notre portfolio administrable.
                     </p>
 
                     <div class="cta-section">
-                        <a href="#!" class="btn btn-primary">En savoir plus</a>
-                        <a href="#!" class="btn btn-outline-secondary">Portfolio</a>
+                        <a href="https://grafikart.fr/tutoriels/wordpress-custom-post-type-1267#autoplay" target="_blank" class="btn btn-primary">Grafikart vous montre<i class="bi-box-arrow-up-right"></i></a>
+                        <a href="https://generatewp.com/post-type/" target="_blank" class="btn btn-outline-secondary">CPT Generator<i class="bi-box-arrow-up-right"></i></a>
                     </div>
                 </div>
 
                 <aside id="main-aside">
-                    <h2>Prérequis techniques</h2>
-                    <ul>
-                        <li>De bonnes connaissances
-                            en HTML/CSS (JavaScript est un plus)</li>
-                        <li>De bonnes bases en PHP (boucles, conditions...)</li>
-                        <li>Comprendre le web</li>
-                        <li>Savoir lire une documentation</li>
-                    </ul>
-
-                    <a style="padding-left: 5px;" target="_blank" href="https://developer.wordpress.org/reference/" class="link link-out">Documentation
-                        WordPress</a>
+                    <h2>Librairie JS de triage d'éléments</h2>
+                    <p>Vous avez la possibilité de mixer votre galerie avec du JavaScript, afin par exemple de trier par catégorie.</p>
+                        <a href="https://www.kunkalabs.com/tutorials/integrating-mixitup-into-your-project/" target="_blank" class="link link-out">La librairie MixitUp</a>
 
                 </aside>
 
             </section>
             
+            <section id="portfolio-section">
+
+                <h2>Une Galerie de mes réalisations</h2>
+
+                <div class="container-portfolio">
+
+                    <div class="col-10 col-sm-12">
+                        Filtrer par :
+                            <button type="button" data-filter="all" class="btn btn-outline-primary btn-mix mx-2" id="filter-all-btn">Tous</button>
+                            <button type="button" data-filter=".personnelles" class="btn btn-outline-primary btn-mix mx-2" id="filter-perso-btn">Personnelles</button>
+                            <button type="button" data-filter=".professionnelles" class="btn btn-outline-primary btn-mix mx-2" id="filter-pro-btn">Professionnelles</button>
+                            <button type="button" data-filter=".webdesign" class="btn btn-outline-primary btn-mix mx-2" id="filter-web-btn">Web design</button>
+                            <button type="button" data-filter=".graphisme" class="btn btn-outline-primary btn-mix mx-2" id="filter-graph-btn">Graphisme</button>
+                    </div>
+
+                    <div id="galerie">
+                        <div class="card">
+                            <div class="overlay">
+                                <h3 class="">Ma réa 1</h3>
+                                <a href="#!" class="btn btn-outline-light mt-2">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
         </div>
 
     </main>
@@ -109,8 +127,8 @@
 
         <nav id="mobile-nav">
             <ul>
-                <li><a href="index.html" class="mobile-nav-link active"><i class="bi-house"></i></a></li>
-                <li><a href="portfolio.html" class="mobile-nav-link"><i class="bi-brush"></i></a></li>
+                <li><a href="index.html" class="mobile-nav-link"><i class="bi-house"></i></a></li>
+                <li><a href="portfolio.html" class="mobile-nav-link active"><i class="bi-brush"></i></a></li>
                 <li><a href="blog.html" class="mobile-nav-link"><i class="bi-book"></i></a></li>
                 <li><a href="a-propos.html" class="mobile-nav-link"><i class="bi-info-circle"></i></a></li>
             </ul>

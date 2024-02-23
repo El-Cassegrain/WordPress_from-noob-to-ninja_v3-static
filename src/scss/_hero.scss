@@ -4,6 +4,10 @@ section#hero-section {
     padding-top: 1.25rem;
 }
 
+.container-left {
+    max-width: 680px;
+}
+
 p.lead {
     font-size: clamp(24px, 3vw, 40px);
     padding-bottom: .45rem;
@@ -13,20 +17,33 @@ p.lead {
 p.subtitle {
     line-height: 1.45rem;
     color: $mid-gray;
+    font-weight: 700;
+    max-width: 450px;
 }
 
 .cta-section {
     margin-top: $cta-margin-top;
     margin-bottom: calc($cta-margin-top + 22px);
-    max-width: 360px;
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    flex-wrap: wrap;
+    .btn {
+        margin-bottom: calc($cta-margin-top / 2);
+    }
+    .btn-primary {
+        margin-right: 24px;
+    }
 }
 
 aside#main-aside {
+    h2 {
+        font-style: italic;
+    }
     width: 100%;
     ul {
         padding-left: 1rem;
+    }
+    ul li {
+        padding: 5px 0;
     }
 }
 

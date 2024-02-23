@@ -11,6 +11,9 @@
     background-color: transparent;
     border: none;
     text-decoration: none;
+    i {
+        padding-left: 8px;
+    }
 }
 
 @mixin btn-primary {
@@ -27,4 +30,8 @@
 @mixin btn-outline-secondary {
     color: $secondary;
     border: 1px solid $secondary;
+}
+
+@mixin btn-mix {
+    padding: 6px 12px;
 }

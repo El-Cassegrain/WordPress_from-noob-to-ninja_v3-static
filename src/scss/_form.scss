@@ -1,0 +1,31 @@
+/* Form styles */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .7rem;
+}
+
+label {
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+input:not(#legal) {
+    height: 2rem;
+    padding: .25rem;
+}
+
+textarea {
+    font-family: $main-font;
+    padding: 5px;
+}
+
+.legal-form-group {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    input {
+        margin-top: 4px;
+        margin-right: 3px;
+    }
+}
